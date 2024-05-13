@@ -5,7 +5,45 @@
     <body class="relative">
         <header class = "bg-header-image bg-cover bg-center bg-no-repeat min-h-screen flex flex-col overflow-hidden">
             <div class="relative">
-                <nav class="bg-gray-800 py-4 px-6 md:px-8 lg:px-10 z-10 max-w-[1920px] mx-auto overflow-hidden">
+
+
+              <nav class="bg-cyan-100 py-4 px-6">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between sm:items-stretch sm:justify-start mx-auto">
+                  <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                  
+                  <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+
+                <div class="container" id="navbar-default">
+                  <ul class="flex justify-center space-x-6 text-gray-400 hidden md:flex">
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white transition-colors" >Home</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white transition-colors">About</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white transition-colors">Services</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white transition-colors">Pricing</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                </div> 
+              </nav>
+
+
+              <!--navbar
+                <nav class="bg-gray-800 py-4 px-6  lg:px-10  mx-auto overflow-hidden">
+                  <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div class="container mx-auto py-4">
                     <a href="#" class="text-white font-bold text-xl">Brand Name</a>
                     <div class="flex justify-center space-x-6 text-gray-400 hidden md:flex">
@@ -15,28 +53,43 @@
                       <a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a>
                       <a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a>
                     </div>
-                    <button class="md:hidden text-white focus:outline-none">
-                      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                      <span class="absolute -inset-0.5"></span>
+                      <span class="sr-only">Open main menu</span>
+                      <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                       </svg>
+
+                      <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+
                     </button>
                   </div>
-                </nav>
+                </div>
+                </nav>-->
+
                 <div class="flex justify-center items-center flex-col sm:flex-row bg-cover bg-center h-[640px] xl:h-[840px] bg-no-repeat" style="background-image: url('../assets/header-image.jpg'); min-height: calc(100vh - 88px);">
                 
                 
                   <!--search panel-->
-                  <div class="grid-cols-2 flex items-center justify-center">
-                    <div class="p-4 flex-none">
-                    <div class="bg-white rounded-lg shadow-lg p-6 w-full md:mr-6">
+                  <div class="grid-cols-2 col-s-2  items-center justify-center">
+                    <div class="p-4">
+                      <div class="bg-cyan-100 rounded-full flex justify-center">
+                      <div class="w-1/2 z-12 grid grid-cols-5">
+                        <div class="flex justify-self-center "><img src="assets/flight.png" alt="">&nbsp; Flight</div>
+                        <div class="flex justify-self-center "><img src="assets/tour.png" alt="">&nbsp; Tour</div>
+                        <div class="flex justify-self-center "><img src="assets/hotel.png" alt="">&nbsp; Hotel</div>
+                        <div class="flex justify-self-center "><img src="assets/car.png" alt="">&nbsp; Car</div>
+                        <!--<div class="flex justify-self-center "><img src="assets/baggage.png" alt="">&nbsp; Baggage</div> -->
+                      </div>
+                    </div>
+                    
+                    
+                    
+                      <div class="bg-white rounded-lg shadow-lg p-6 w-full md:mr-6">
                       
-                        <div class=" grid grid-cols-5 content-center">
-                          <div class="flex justify-self-center "><img src="assets/flight.png" alt="">&nbsp; Flight</div>
-                          <div class="flex justify-self-center "><img src="assets/tour.png" alt="">&nbsp; Tour</div>
-                          <div class="flex justify-self-center "><img src="assets/hotel.png" alt="">&nbsp; Hotel</div>
-                          <div class="flex justify-self-center "><img src="assets/car.png" alt="">&nbsp; Car</div>
-                          <!--<div class="flex justify-self-center "><img src="assets/baggage.png" alt="">&nbsp; Baggage</div> -->
-                        </div>
+                        
                         <div class="flex justify-center  p-4">
                         <h3 class="text-lg font-bold mb-4"></h3>
                         <div class="flex space-x-4">
@@ -176,7 +229,7 @@
                 </div>
             
                 <div class="flex justify-center items-center h-full">-->
-                  <div class="ms-8 mr-4 flex  justify-end bg-white p-6 rounded-lg shadow-md">
+                  <div class="grid grid-cols-1 col-s-2  flex justify-end bg-white p-6 rounded-lg shadow-md">
                     
                     <form class="shadow-lg w-80 p-4 flex flex-col bg-white rounded-lg">
                       <h3 class="mb-3">Login</h3>
